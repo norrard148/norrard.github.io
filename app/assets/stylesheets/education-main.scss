@@ -1,0 +1,382 @@
+// Place all the styles related to the education controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 메인페이지 */
+.education-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.education-main-chart {
+    width: 35vh;
+    height: 100%;
+    position: fixed;
+}
+
+.education-main-chart-box {
+    height: 100%;
+    position:relative;
+    z-index: 500;
+    padding-top: 9vh;
+    background-color: #1c182f;
+    box-shadow: 2vh 0vh 3vh rgba(34, 34, 34, 0.137);
+}
+
+.education-main-chart-box-item {
+    width: 100%;
+    padding: 1.7vh 0vh 0vh 0vh;
+}
+
+.education-main-chart-box-item h1 {
+    color: white;
+}
+
+.chart-title {
+    margin-left: 2vh;
+    padding-bottom: 1.3vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.education-main-chart-box-item-box {
+    width: 100%;
+    height: 100%;
+}
+
+.education-main-chart-box-item-box-each {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    img {
+        height: 2.5vh;
+        width: 2.5vh;
+        position:relative;
+        top:0.2vh;
+        margin-left: 4vh;
+    }
+}
+.education-main-chart-box-item-box-each h1 {
+    margin-left: 0.5vw;
+    font-size: 1.8vh;
+}
+
+.education-main-chart-box-item-box-each h2 {
+    margin-left:1vh;
+    color:rgb(80, 67, 102);
+    font-weight: 300;
+    font-size: 1.5vh;
+}
+
+.education-main-box {
+    width: 100vw;
+    width: -moz-calc(100vw - 37vh);
+    width: calc(100vw - 37vh);
+    width: -webkit-calc(100vw - 37vh);
+    position:absolute;
+    margin-left:35vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.airpin {
+    width: 100vw;
+    width: -moz-calc(100vw - 37vh);
+    width: calc(100vw - 37vh);
+    width: -webkit-calc(100vw - 37vh);
+    height: 100vh;
+    position: relative;
+}
+
+.education-main-box-content {
+    width: 100vw;
+    width: -moz-calc(100vw - 37vh);
+    width: calc(100vw - 37vh);
+    width: -webkit-calc(100vw - 37vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    position:relative;
+    top: 0;
+}
+
+#category- {
+    h1 {
+        font-weighT: 500;
+        color: rgb(82, 79, 94);
+    }
+}
+
+
+
+#contraception {
+    background: #ffe26f image-url('education-index/교육바탕.png') 100% 100% repeat;
+    height: 100vh;
+    padding-top: 9vh;
+    position:relative;
+    img {
+        width: 26vh;
+        height: 28vh;
+        background-color: #ffe26f;
+    }
+    button {
+        margin-top: 0.5vh;
+        width: 38vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color: #563761;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color: white;
+        box-shadow: 1vh 1vh 3vh rgba(82, 82, 82, 0.205);
+        cursor: pointer;
+    }
+}
+
+#contraception::before {
+    content: '';
+    width: 20vh;
+    height: 18vh;
+    position:absolute;
+    top:27%;
+    left:55%;
+    background-image: url("피임질문.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#venereal {
+    background: #f3825f url("교육바탕.png") 30% 30% repeat;
+    height: 91.4vh;
+    img {   
+        width: 34vh;
+        height: 26vh;
+        margin-top: 3vh;
+        background-color: #f3825f;
+    }
+    button {
+        margin-top: 4vh;
+        width: 35vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color: #a7425c;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color: white;
+        box-shadow: 1vh 1vh 3vh rgba(82, 82, 82, 0.205);
+        cursor: pointer;
+    }
+}
+
+
+#venereal::before {
+    content: '';
+    width: 20vh;
+    height: 20vh;
+    position:absolute;
+    top:18%;
+    left:55%;
+    background-image: url("성병.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#pin-2, #venereal {
+    height: 91.4vh;
+}
+
+#genderequality {
+    background: #a7425c url("빗금.png") 0 0 repeat;
+    background-size: 35% auto;
+    a {
+        color: #ffe26f;
+        font-size: 5vh;
+    }
+    img {
+        width: 30vh;
+        height: 26vh;
+    }
+    button {
+        margin-top: 0.7vh;
+        width: 37vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color:#5a1727;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color:white;
+        box-shadow: 1vh 1vh 3vh rgba(82, 82, 82, 0.205);
+        cursor: pointer;
+    }
+
+}
+
+
+#genderequality::after {
+    content: '';
+    width: 20vh;
+    height: 18vh;
+    position:absolute;
+    top:22%;
+    left:58%;
+    background-image: url("예민.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+#genderequality::before {
+    content: '';
+    width: 20vh;
+    height: 18vh;
+    position:absolute;
+    top:28%;
+    left:27%;
+    background-image: url("이해.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+
+#pin-3, #genderequality {
+    height:91.4vh;
+}
+
+#media {
+    background-color: #ffbc01;
+    a {
+        color: #f3825f;
+        font-size: 5vh;
+    }
+    img {
+        width: 40vh;
+        height: 17vh;
+    }
+    button {
+        margin-top: 4vh;
+        width: 37vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color:#5a1727;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color:white;
+        box-shadow: 1vh 1vh 3vh rgba(82, 82, 82, 0.205);
+        cursor: pointer;
+    }
+}
+
+#media::before {
+    content: '';
+    width: 20vh;
+    height: 14vh;
+    position:absolute;
+    top:21%;
+    left:54%;
+    background-image: url("자극적.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#pin-4, #media  {
+    height: 91.4vh;
+}
+
+#browsing {
+    background-color: #563761;
+    background-color: #122533;
+    a {
+        color: #f3825f;
+        font-size: 5vh;
+    }
+    img {
+        width: 25vh;
+        height: 40vh;
+        margin-left:9vh;
+        margin-top:7vh;
+    }
+    button {
+        margin-top: 6vh;
+        width: 38vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color: #a7425c;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color: white;
+        box-shadow: 1vh 1vh 3vh rgba(39, 39, 39, 0.205);
+        cursor: pointer;
+        a {
+            color: #f3b35f;
+            font-size: 3vh;
+            font-weight: 500;
+        }
+    }
+}
+
+#pin-5, #browsing  {
+    height: 91.4vh;
+}
+
+
+#qna {
+    background-color: #563761;
+    a {
+        color: #f3825f;
+        font-size: 5vh;
+    }
+    img {
+        width: 35vh;
+        height: 15vh;
+    }
+    button {
+        width: 42vh;
+        margin-top:1vh;
+        height: 7vh;
+        border-radius: 5vh;
+        border: none;
+        background-color: #a7425c;
+        font-size: 3vh;
+        font-weighT: 500; 
+        color: white;
+        box-shadow: 1vh 1vh 3vh rgba(39, 39, 39, 0.205);
+        cursor: pointer;
+    }
+}
+
+#qna::before {
+    content: '';
+    width: 20vh;
+    height: 18vh;
+    position:absolute;
+    top:22%;
+    left:57%;
+    background-image: url("어떤.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#pin-6, #qna  {
+    height: 91.4vh;
+}
+
+
+#category-1:hover, #category-2:hover, #category-3:hover, #category-4:hover,#category-5:hover,#category-6:hover {
+    background: #221c38 url("블루.png") repeat;
+    h1 {
+        font-size: 2.2vh;
+        color: rgb(248, 255, 183);
+    }
+}

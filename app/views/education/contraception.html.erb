@@ -1,0 +1,109 @@
+<div class="top-button" onclick="movetop()">
+    <%= image_tag("up.svg", {:style=> "width:6vh;height:6vh;z-index:1000;"}) %>
+    <h1 style=" font-weight:400; top:-2vh; position:relative;">Top</h1>
+</div>
+
+<div class="venereal">
+    <div class="vene-top">
+        <div class="vene-title">
+            <div style="width: 30vh;height: 30vh;overflow:hidden;display:Flex;position:relative;justify-content:center;align-items:center;overflow:hidden;">
+                <%= image_tag("칸채우기.svg", {:style=> "width:40vh;height: 40vh;position:Absolute;"}) %>
+            </div>
+            <h1>생각보다 많고 까다로운 피임 알아보기</h1>
+        </div>
+        <div class=vene-subtitle>
+            <h1>꼭해야 한다고들 하지만 가끔 귀찮은 것 같은 피임! 하지만 때로 엄청난 결과를 낳을 수 있습니다.<br>
+            마우스를 올려보세요.</h1>
+        </div>
+
+        <div class="vene-select">
+            <%=link_to '성(性)별로 보기',education_go2_path , remote: true, :class=>"render-vene1", :id=>"render1" %>
+            <%=link_to '순서대로 보기',education_go3_path , remote: true, :class=>"render-vene1", :id => "render2" %>
+           
+           
+        </div>
+    </div>
+      
+     
+    
+</div> 
+
+
+<script>
+
+var a = 0;
+    $("body").css({"background-color": "#f8e4cc"});
+    
+    function movetop() {
+        $('html, body').animate({scrollTop : 0}, 900);
+    }
+    
+
+
+    
+</script>
+
+
+
+<script>
+ var quiz_number=1;
+    function leftMove() {
+        if (quiz_number == 4) {
+            $(".quiz-right").css({"display": "block"});
+        }
+          if (quiz_number == 2) {
+            $(".quiz-left").css({"display": "none"});
+        }
+        if (quiz_number > 1) {
+             quiz_number-=1
+            $('.gg').animate({left : `-${(quiz_number-1)*95}vh`}, 600);
+            
+        }
+    
+    }
+
+    function rightMove() {
+         if (quiz_number == 1) {
+            $(".quiz-left").css({"display": "block"});
+        }
+         if (quiz_number == 3) {
+            $(".quiz-right").css({"display": "none"});
+        }
+        if (quiz_number < 4) {
+            quiz_number+=1
+            $('.gg').animate({left : `-${(quiz_number-1)*95}vh`}, 600);
+               
+        }
+    }
+
+    var quiz_numbers =1;
+    function leftMove1() {
+        if (quiz_numbers == 4) {
+            $(".quiz-right1").css({"display": "block"});
+        }
+          if (quiz_numbers == 2) {
+            $(".quiz-left1").css({"display": "none"});
+        }
+        if (quiz_numbers > 1) {
+             quiz_numbers-=1
+            $('.gg-1').animate({left : `-${(quiz_numbers-1)*95}vh`}, 600);
+            
+        }
+    
+    }
+
+    function rightMove1() {
+         if (quiz_numbers == 1) {
+            $(".quiz-left1").css({"display": "block"});
+        }
+         if (quiz_numbers == 3) {
+            $(".quiz-right1").css({"display": "none"});
+        }
+        if (quiz_numbers < 4) {
+            quiz_numbers+=1
+            $('.gg-1').animate({left : `-${(quiz_numbers-1)*95}vh`}, 600);
+               
+        }
+    }
+
+</script> 
